@@ -1,0 +1,83 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    background-image:linear-gradient(to top, red,black);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+
+}
+
+h1{
+    background-color: rgba(253, 6, 6, 0.521);
+    text-shadow: 1px 2px 5px rgb(255, 255, 255);
+}
+
+
+.album {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 2vw;
+
+
+}
+
+header {
+
+    text-align: center;
+
+}
+
+footer{
+    
+    display: block;
+    position: fixed;
+    width: 100%;
+    bottom: 0vh;
+    left: 0;
+    background-color:rgba(255, 6, 6, 0.432);
+    text-align: center;
+    padding: 15px;
+    
+}
+
+
+
+.foto-album img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+.foto-album {
+
+    width: 340px;
+    height: 340px;
+    border: 10px solid #fff;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.509);
+    transition: transform .3s;
+    filter: brightness(0.4);
+    filter: grayscale(100%);
+    filter: opacity(100px);
+    border-radius: 35px;
+}
+
+.foto-album:hover {
+
+   transform: scale(1.05);
+   filter: blur(0px);
+   border-radius: 35px;
+
+}
